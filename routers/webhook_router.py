@@ -29,3 +29,9 @@ def receber_formulario(
         "message": "Usuário processado",
         "usuario_id": usuario.id
     }
+    
+@router.get("/usuarios")
+def getAllUser(
+    db: Session = Depends(get_db)
+):
+    return UsuarioRepository.getAllUser(db)
