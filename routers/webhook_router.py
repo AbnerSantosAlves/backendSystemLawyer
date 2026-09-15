@@ -34,4 +34,6 @@ def receber_formulario(
 def getAllUser(
     db: Session = Depends(get_db)
 ):
-    return UsuarioRepository.getAllUser(db)
+    repository = UsuarioRepository(db)
+
+    return repository.getAllUser()

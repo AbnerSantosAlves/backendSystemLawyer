@@ -10,14 +10,11 @@ class UsuarioRepository:
         self.db = db
 
 
-    def getAllUser(
-        self
-    ):
-        # 1. Cria a query com select()
+    def getAllUser(self):
         query = select(Usuario)
-    
-         # 2. Executa usando scalars() para retornar a lista de objetos limpa
+
         usuarios = self.db.scalars(query).all()
+
         return usuarios
     
     def buscar_por_id_formulario(
