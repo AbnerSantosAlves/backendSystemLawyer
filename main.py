@@ -8,4 +8,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+@app.router('/')
+def home():
+    return "Estou ativo"
 app.include_router(webhook_router)
