@@ -36,6 +36,6 @@ def getAllUser(
 ):
     return UsuarioRepository.getAllUser(db)
 
-@router.get("/ping")
+@router.get("/")
 def ping():
     return {"Estou ativo"}
