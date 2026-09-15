@@ -35,3 +35,7 @@ def getAllUser(
     db: Session = Depends(get_db)
 ):
     return UsuarioRepository.getAllUser(db)
+
+@router.get("/ping")
+def ping():
+    return {"Estou ativo"}
