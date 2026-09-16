@@ -31,6 +31,7 @@ class UsuarioService:
             data_nascimento=dados.data_nascimento,
             estado_civil=dados.estado_civil,
             ds_profissao=dados.ds_profissao,
+            ds_endereco=dados.ds_endereco,
             nr_telefone=dados.nr_telefone,
             ds_assuton=dados.ds_assunto,
             documento=contrato,

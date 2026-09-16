@@ -41,6 +41,11 @@ class Usuario(Base):
         String(100),
         nullable=False
     )
+    
+    ds_endereco: Mapped[str] = mapped_column(
+        String(100),
+        nullable=False
+    )
 
     nr_telefone: Mapped[str] = mapped_column(
         String(100),
@@ -51,6 +56,7 @@ class Usuario(Base):
         String(150),
         nullable=False
     )
+    
     
     documento: Mapped[bytes] = mapped_column(
         LargeBinary,
