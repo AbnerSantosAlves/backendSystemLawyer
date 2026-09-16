@@ -32,7 +32,7 @@ def receber_formulario(
     
 @router.get("/usuarios")
 def getAllUser(
-    db: Session = Depends(get_db), response_model=UsuarioWebhook
+    db: Session = Depends(get_db), response_model=list[UsuarioWebhook]
 ):
     repository = UsuarioRepository(db)
 

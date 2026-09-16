@@ -1,5 +1,5 @@
 from sqlalchemy import select
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, defer
 
 from models.usuario import Usuario
 
@@ -11,11 +11,7 @@ class UsuarioRepository:
 
 
     def getAllUser(self):
-        query = select(Usuario)
-
-        usuarios = self.db.scalars(query).all()
-
-        return usuarios
+        return self.db.query(Usuario).options(defer(Usuario.documento)).all()
     
     def buscar_por_id_formulario(
         self,
