@@ -1,6 +1,6 @@
 from models.usuario import Usuario
 from schemas.usuario import UsuarioWebhook
-from docModel import criar_documento
+from services.docModel import criar_documento
 
 
 class UsuarioService:
