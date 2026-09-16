@@ -1,4 +1,4 @@
-import io
+import io, os
 from docx import Document
 
 
@@ -13,7 +13,11 @@ def criar_documento(dados):
     "{CPFCLIENTE}": dados.nr_cpf,
     "{RUACLIENTE}": dados.ds_endereco,
     }
-    doc = Document("contratoHonorarios.docx")
+    
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+    MODEL_PATH = os.path.join(BASE_DIR, "contratoHonorarios.docx")
+    doc = Document(MODEL_PATH)
     
     for paragrafo in doc.paragraphs:
         for termo_antigo, termo_novo in substituicoes.items():
