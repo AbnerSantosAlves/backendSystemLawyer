@@ -4,3 +4,4 @@ sqlalchemy
 pandas
 pydantic[email]
 pymysql
+python-docx

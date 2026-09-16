@@ -52,12 +52,12 @@ class Usuario(Base):
         nullable=False
     )
     
-    documento = Mapped[bytes] = mapped_column(
+    documento: Mapped[bytes] = mapped_column(
         LargeBinary,
         nullable=False
     )
     
-    documento_nome = Mapped[str] = mapped_column(
+    documento_nome: Mapped[str] = mapped_column(
         String(100),
         nullable=False
     )
