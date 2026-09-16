@@ -34,7 +34,7 @@ class UsuarioService:
             nr_telefone=dados.nr_telefone,
             ds_assuton=dados.ds_assunto,
             documento=contrato,
-            documento=f"documento_{dados.nome}"
+            documento_nome=f"documento_{dados.nome}"
         )
 
         self.repository.criar(usuario)
