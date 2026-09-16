@@ -12,7 +12,6 @@ def criar_documento(dados):
     "{CINCLIENTE}": dados.nr_rg,  # ou dados.nr_ci
     "{CPFCLIENTE}": dados.nr_cpf,
     "{RUACLIENTE}": dados.ds_endereco,
-    "{CEPCLIENTE}": dados.cep,
     }
     doc = Document("contratoHonorarios.docx")
     
