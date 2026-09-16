@@ -8,10 +8,10 @@ def criar_documento(dados):
     "{NOMECLIENTE}": dados.nome,
     # Se 'estado civil' e 'profissão' também vierem de variáveis, mude aqui:
     "{ESTADOCIVILCLIENTE}": dados.estado_civil,
-    "{PROFISSAOCLIENTE}": dados.profissao,
+    "{PROFISSAOCLIENTE}": dados.ds_profissao,
     "{CINCLIENTE}": dados.nr_rg,  # ou dados.nr_ci
     "{CPFCLIENTE}": dados.nr_cpf,
-    "{RUACLIENTE}": dados.endereco,
+    "{RUACLIENTE}": dados.ds_endereco,
     "{CEPCLIENTE}": dados.cep,
     }
     doc = Document("contratoHonorarios.docx")
