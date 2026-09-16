@@ -6,7 +6,6 @@ def criar_documento(dados):
     
     substituicoes = {
     "{NOMECLIENTE}": dados.nome,
-    "{NACIONALIDADECLIENTE}": dados.nacionalidade,
     # Se 'estado civil' e 'profissão' também vierem de variáveis, mude aqui:
     "{ESTADOCIVILCLIENTE}": dados.estado_civil,
     "{PROFISSAOCLIENTE}": dados.profissao,
