@@ -66,7 +66,7 @@ def getDocumento(
         ),
         headers={
             "Content-Disposition": (
-                f'attachment; filename="{usuario.documento_nome}"'
+                f'attachment; filename="{usuario.documento_nome}.docx"'
             )
         }
     )
