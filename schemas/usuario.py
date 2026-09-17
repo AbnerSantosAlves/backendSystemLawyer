@@ -4,7 +4,7 @@ from pydantic import BaseModel
 
 
 class UsuarioWebhook(BaseModel):
-    id_formulario: str
+    id_formulario: int
     nome: str
     nr_rg: str  
     nr_cpf: str

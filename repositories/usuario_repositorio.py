@@ -15,7 +15,7 @@ class UsuarioRepository:
     
     def buscar_por_id_formulario(
         self,
-        id_formulario: str
+        id_formulario: int
     ):
         statement = select(Usuario).where(
             Usuario.id_formulario == id_formulario

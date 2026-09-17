@@ -1,4 +1,4 @@
-from sqlalchemy import String, LargeBinary, Date
+from sqlalchemy import String, LargeBinary, Date, Integer
 from sqlalchemy.orm import Mapped, mapped_column
 
 from database.session import Base
@@ -11,8 +11,8 @@ class Usuario(Base):
         primary_key=True
     )
 
-    id_formulario: Mapped[str] = mapped_column(
-        String(100),
+    id_formulario: Mapped[int] = mapped_column(
+        Integer,
         unique=True,
         nullable=False
     )
