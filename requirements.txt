@@ -5,3 +5,4 @@ pandas
 pydantic[email]
 pymysql
 python-docx
+psycopg2-binary
