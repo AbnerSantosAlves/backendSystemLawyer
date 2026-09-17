@@ -28,6 +28,7 @@ class UsuarioService:
             id_formulario=dados.id_formulario,
             nome=dados.nome,
             nr_cpf=dados.nr_cpf,
+            nr_rg=dados.nr_rg,
             data_nascimento=dados.data_nascimento,
             estado_civil=dados.estado_civil,
             ds_profissao=dados.ds_profissao,

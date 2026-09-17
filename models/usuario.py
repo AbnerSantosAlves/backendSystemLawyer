@@ -27,6 +27,11 @@ class Usuario(Base):
         nullable=False
     )
     
+    nr_rg: Mapped[str] = mapped_column(
+        String(100),
+        nullable=True
+    )
+    
     data_nascimento: Mapped[Date] = mapped_column(
         Date,
         nullable=False
