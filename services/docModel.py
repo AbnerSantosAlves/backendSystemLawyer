@@ -8,10 +8,10 @@ def criar_documento(dados):
     "{NOMECLIENTE}": dados.nome,
     # Se 'estado civil' e 'profissão' também vierem de variáveis, mude aqui:
     "{ESTADOCIVILCLIENTE}": dados.estado_civil,
-    "{PROFISSAOCLIENTE}": dados.ds_profissao,
-    "{CINCLIENTE}": dados.nr_rg,  # ou dados.nr_ci
-    "{CPFCLIENTE}": dados.nr_cpf,
-    "{RUACLIENTE}": dados.ds_endereco,
+    "{PROFISSAO}": dados.ds_profissao,
+    "{CIN}": dados.nr_rg,  # ou dados.nr_ci
+    "{CPF}": dados.nr_cpf,
+    "{RUA}": dados.ds_endereco,
     }
     
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
