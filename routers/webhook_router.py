@@ -62,8 +62,7 @@ def getDocumento(
     return Response(
         content=usuario.documento,
         media_type=(
-            usuario.documento_tipo
-            or "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         ),
         headers={
             "Content-Disposition": (
